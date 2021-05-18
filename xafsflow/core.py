@@ -2,21 +2,25 @@
 core functionality
 """
 
+# import numpy as np
+# import pandas as pd
+# import xarray as xr
 
-def another_func(a, b):
+
+def bound_xvalues(frame, x, x_dim, by):
     """
-    just a test
+    bound `x` to be within min/max of frame[x_dim]
 
     Parameters
     ----------
-    a : int
-        an input
-    b : float
-        another input
-
-
-    See also
-    --------
-    xafsflow.xafsflow.a_function
+    frame : dataframe
+    x : array
+    x_dim : str
+    by : str or sequence of str
     """
-    pass
+
+    t = frame.groupby(by)[x_dim].agg(["min", "max"])
+    lb = t["min"].max()
+    ub = t["max"].min()
+
+    return x[(x >= lb) & (x <= ub)]

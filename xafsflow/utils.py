@@ -8,7 +8,7 @@ def interpolate_frame(
     x_dim,
     by=None,
     by_kws=None,
-    method="linear",
+    method="index",
     mask_minmax=True,
     sort_index=True,
     ret_all=False,

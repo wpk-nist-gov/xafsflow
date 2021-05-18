@@ -8,15 +8,15 @@ dependencies:
   - setuptools>=38.4
   # cli
   - matplotlib
+  - seaborn
   - numpy
   - scipy
   - pandas
   - xarray
-  - ipython
-  - ipykernel
   - bottleneck
   - scikit-learn
   - lmfit
+  - cmomy
   # Additional?
   # # - cmomy
   # - pip

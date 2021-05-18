@@ -2,6 +2,9 @@
 
 """
 
+from .core import bound_xvalues
+from .reader import read_nor_file, sample_name_to_sample_number
+from .utils import interpolate_frame
 
 try:
     import pkg_resources
@@ -14,3 +17,11 @@ except Exception:
 
 __author__ = """William P. Krekelberg"""
 __email__ = "wpk@nist.gov"
+
+
+__all__ = [
+    "bound_xvalues",
+    "read_nor_file",
+    "sample_name_to_sample_number",
+    "interpolate_frame",
+]
