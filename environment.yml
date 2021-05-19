@@ -15,8 +15,9 @@ dependencies:
   - xarray
   - bottleneck
   - scikit-learn
-  - lmfit
+  # - lmfit
   - cmomy
+  - tqdm
   # Additional?
   # # - cmomy
   # - pip
