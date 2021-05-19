@@ -22,6 +22,48 @@ Utilities to analyze XAFS data
 * Free software: NIST license
 * Documentation: https://xafsflow.readthedocs.io.
 
+Installation
+------------
+
+This project is not yet available via conda or on pypi.  The recommended route is to install most dependencies via conda, then pip install directly from github.  For this, do the following:
+
+If you'd like to create an isolated environment:
+
+.. code-block:: console
+
+    $ conda create -n {env-name} python=3.8
+
+Activate the environment you'd like to install to with:
+
+.. code-block:: console
+
+   $ conda activate {env-name}
+
+Install required dependencies with:
+
+.. code-block:: console
+
+   $ conda install -n {env-name} setuptools pandas xarray bottleneck scikit-learn matplotlib seaborn
+   $ conda install -n {env-name} -c wpk-nist cmomy
+
+Optional, but recommended
+
+.. code-block:: console
+
+   # to install jupyter
+   $ conda install -n {env-name} jupyter
+
+   # Or
+   # to add just a kernel for this enviromenment
+   $ conda install -n {env-name} ipykernel
+
+Finally, install `xafsflow` in the active environment do:
+
+.. code-block:: console
+
+   $ pip install git+https://github.com/wpk-nist-gov/xafsflow.git@develop
+
+
 
 Features
 --------
