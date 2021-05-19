@@ -2,8 +2,7 @@
 
 """
 
-from .core import bound_xvalues
-from .reader import read_nor_file, sample_name_to_sample_number
+from .core import bound_xvalues, read_nor_file, sample_name_to_sample_number
 from .utils import interpolate_frame
 
 try:
