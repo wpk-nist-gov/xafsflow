@@ -43,8 +43,7 @@ Install required dependencies with:
 
 .. code-block:: console
 
-   $ conda install -n {env-name} setuptools pandas xarray bottleneck scikit-learn matplotlib seaborn tqdm
-   $ conda install -n {env-name} -c wpk-nist cmomy
+   $ conda install -n {env-name} -c wpk-nist setuptools pandas xarray bottleneck scikit-learn matplotlib seaborn tqdm cmomy
 
 Optional, but recommended
 
