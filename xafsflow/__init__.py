@@ -2,7 +2,14 @@
 
 """
 
-from .core import bound_xvalues, read_nor_file, sample_name_to_sample_number
+from .core import (
+    Lasso_analysis,
+    bound_xvalues,
+    calculate_trunc_matrix,
+    read_nor_file,
+    sample_name_to_sample_number,
+    setup_Xempirical,
+)
 from .utils import interpolate_frame
 
 try:
@@ -20,6 +27,9 @@ __email__ = "wpk@nist.gov"
 
 __all__ = [
     "bound_xvalues",
+    "Lasso_analysis",
+    "calculate_trunc_matrix",
+    "setup_Xempirical",
     "read_nor_file",
     "sample_name_to_sample_number",
     "interpolate_frame",
